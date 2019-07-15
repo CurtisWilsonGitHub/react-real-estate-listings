@@ -1,15 +1,14 @@
 import React, { Component} from 'react'
-import ReactDOM from 'react-dom'
 import Header from './Header.js'
 import Filter from './Filter.js'
 import Listings from './Listings.js'
-import listingsData from './data/listingsData.js'
+import listingsData from './../data/listingsData.js'
 
-class App extends Component {
+export default class RealEstate extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Joe',
+      name: 'Curtis',
       listingsData,
       city: 'All',
       homeType: 'All',
@@ -18,7 +17,7 @@ class App extends Component {
       max_price: 10000000,
       min_floor_space: 0,
       max_floor_space: 50000,
-      elavator: false,
+      elevator: false,
       finished_basement: false,
       gym: false,
       swimming_pool: false,
@@ -51,7 +50,6 @@ class App extends Component {
       [name]: value
     }, () => {
       this.filteredData()
-      console.log(this.state)
     })
   }
 
@@ -68,30 +66,31 @@ class App extends Component {
       item.floorSpace <= this.state.max_floor_space && item.rooms >= this.state.bedrooms
     })
 
-    if(this.state.city != "All") {
+    if(this.state.city !== "All") {
       newData = newData.filter((item)=>{
-        return item.city == this.state.city
-      })
-    }
-    if(this.state.homeType != "All") {
-      newData = newData.filter((item)=>{
-        return item.homeType == this.state.homeType
+        return item.city === this.state.city
       })
     }
 
-    if(this.state.sortby == 'price-asc'){
+    if(this.state.homeType !== "All") {
+      newData = newData.filter((item)=>{
+        return item.homeType === this.state.homeType
+      })
+    }
+
+    if(this.state.sortby === 'price-asc'){
       newData = newData.sort((a,b) =>{
         return a.price - b.price
       })
     }
 
-    if(this.state.sortby == 'price-dsc'){
+    if(this.state.sortby === 'price-dsc'){
       newData = newData.sort((a,b) =>{
         return b.price - a.price
       })
     }
 
-    if(this.state.search != ''){
+    if(this.state.search !== ''){
       newData=newData.filter((item)=>{
         let city = item.city.toLowerCase()
         let searchText = this.state.search.toLowerCase()
@@ -100,11 +99,39 @@ class App extends Component {
         if(n != null){
           return true
         }
+        return false
       })
     }
 
+   
+  const newDataExtrasFiltered = newData.map((listing)=>{
+    const{
+      elevator,
+      gym,
+      swimming_pool,
+    } = this.state
+
+    if(elevator === true && listing.extras.includes('elevator') === true){
+        return listing
+    }
+    if(gym === true && listing.extras.includes('gym') === true){
+        return listing
+    }
+    if(swimming_pool === true && listing.extras.includes('Swimming Pool') === true){
+        return listing
+    }
+    if( elevator === false && gym === false && swimming_pool === false){
+      return listing
+    }
+  })
+
+  const newDataNullFiltered = newDataExtrasFiltered.filter((listing)=>{
+    return listing !== undefined
+  })
+
+
     this.setState({
-      filteredData: newData
+      filteredData: newDataNullFiltered
     })
   }
 
@@ -141,8 +168,6 @@ class App extends Component {
         bedrooms,
         cities
       }
-    }, ()=>{
-      console.log(this.state)
     })
   }
   render () {
@@ -158,6 +183,3 @@ class App extends Component {
   }
 }
 
-const app = document.getElementById('app')
-
-ReactDOM.render(<App />, app)

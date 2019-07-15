@@ -12,12 +12,12 @@ export default class Header extends Component {
   loopListings(){
     let {listingsData}= this.props
 
-    if(listingsData == undefined || listingsData.length == 0){
+    if(listingsData === undefined || listingsData.length === 0){
       return "Sorry your filter did not match any listings."
     }
 
     return  listingsData.map((listing,index)=> {
-      if(this.props.globalState.view == 'box'){
+      if(this.props.globalState.view === 'box'){
         // this is the box view
         return (<div className="col-md-3" key={index}>
           <div className="listing">

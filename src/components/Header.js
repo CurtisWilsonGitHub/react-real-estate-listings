@@ -12,7 +12,7 @@ export default class Header extends Component {
   }
   render () {
     return (<header>
-      <div className="logo"> logo </div>
+      <div className="logo"> House Finders </div>
       <nav>
         <a href="#"> create ads </a>
         <a href="#"> about us </a>

@@ -8,7 +8,6 @@ var listingsData=[
     floorSpace: 2500,
     extras:[
       'elevator',
-      'gym'
     ],
     homeType: 'Apartment',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
@@ -22,8 +21,7 @@ var listingsData=[
     price: 520000,
     floorSpace: 2700,
     extras:[
-      'elevator',
-      'gym'
+      'gym',
     ],
     homeType: 'Studio',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
@@ -37,16 +35,14 @@ var listingsData=[
     price: 220000,
     floorSpace: 5000,
     extras:[
-      'elevator',
       'Swimming Pool',
-      'gym'
     ],
     homeType: 'Ranch',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'909 Drive Dr',
     city: 'Denver',
     state: 'CO',
     rooms: 2,
@@ -54,36 +50,35 @@ var listingsData=[
     floorSpace: 2500,
     extras:[
       'elevator',
-      'gym'
+      'gym',
     ],
     homeType: 'Home',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'1850 Curtis Ave',
     city: 'Denver',
     state: 'CO',
     rooms: 2,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
+      'Swimming Pool',
+      'elevator'
     ],
     homeType: 'Town House',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'3749 Troy St',
     city: 'Denver',
     state: 'CO',
     rooms: 4,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
       'gym'
     ],
     homeType: 'Condo',
@@ -91,135 +86,118 @@ var listingsData=[
 
   },
   {
-    address:'123 Fun Dr',
+    address:'2834 Central St',
     city: 'Denver',
     state: 'CO',
     rooms: 4,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Apartment',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'8475 Hannible Blv',
     city: 'Denver',
     state: 'CO',
     rooms: 1,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
+      'Swimming Pool',
     ],
     homeType: 'Studio',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'9840 Boulder Dr',
     city: 'Denver',
     state: 'CO',
     rooms: 1,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Home',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'8495 Mississippi bld',
     city: 'Denver',
     state: 'CO',
     rooms: 2,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Townhouse',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'9849 Bored St',
     city: 'Denver',
     state: 'CO',
     rooms: 3,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Studio',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'4853 Pedestal Ave',
     city: 'Denver',
     state: 'CO',
     rooms: 4,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Ranch',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'8594 Amazing St',
     city: 'Denver',
     state: 'CO',
     rooms: 5,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Ranch',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'93829 Exception Ave',
     city: 'Denver',
     state: 'CO',
     rooms: 2,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Townhouse',
     image: 'https://images4.roofandfloor.com/listing_c1c159dd1c36755f7967670f03b87a45/1024x600/imperial-villas-apartments-in-kuniyamuthur-elevation-photo-1cti.jpg'
 
   },
   {
-    address:'123 Fun Dr',
+    address:'404 Missing Ave',
     city: 'Denver',
     state: 'CO',
     rooms: 5,
     price: 220000,
     floorSpace: 2500,
     extras:[
-      'elevator',
-      'gym'
     ],
     homeType: 'Apartment',
     image: 'https://images1.apartments.com/i2/82dEJudNsIFSeTMF0bKXTZxMtxrtQqjM1qSfKGprNuU/116/grand-reserve-katy-tx-aura-grand.jpg'

@@ -4,7 +4,7 @@ export default class Filter extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Joe'
+      name: 'Curtis'
     }
     this.cities = this.cities.bind(this)
     this.homeTypes = this.homeTypes.bind(this)
@@ -14,7 +14,7 @@ export default class Filter extends Component {
     this.props.populateAction()
   }
   cities(){
-    if(this.props.globalState.populateFormsData.cities != undefined){
+    if(this.props.globalState.populateFormsData.cities !== undefined){
       let {cities} = this.props.globalState.populateFormsData
       return cities.map((item) => {
         return(
@@ -26,7 +26,7 @@ export default class Filter extends Component {
 
   }
   homeTypes(){
-    if(this.props.globalState.populateFormsData.homeTypes != undefined){
+    if(this.props.globalState.populateFormsData.homeTypes !== undefined){
       let {homeTypes} = this.props.globalState.populateFormsData
       return homeTypes.map((item) => {
         return(
@@ -36,7 +36,7 @@ export default class Filter extends Component {
     }
   }
   bedrooms(){
-    if(this.props.globalState.populateFormsData.bedrooms != undefined){
+    if(this.props.globalState.populateFormsData.bedrooms !== undefined){
       let {bedrooms} = this.props.globalState.populateFormsData
       return bedrooms.map((item) => {
         return(
@@ -84,7 +84,7 @@ export default class Filter extends Component {
                 </span>
                 <label htmlFor="extras">
                   <span>Elevators</span>
-                  <input name="elavator" value="elavator" type="checkbox" onChange={this.props.change} />
+                  <input name="elevator" value="elevator" type="checkbox" onChange={this.props.change} />
                 </label>
                 <label htmlFor="extras">
                   <span>Swimming Pool</span>
